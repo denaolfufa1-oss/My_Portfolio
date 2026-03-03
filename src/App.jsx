@@ -9,7 +9,7 @@ import Projects from './components/Projects';
 import Contact  from './components/Contact';
 import Footer   from './components/Footer';
 
-// ✏️ EDIT: Add or remove sections by commenting out components below
+
 export default function App() {
   return (
     <>

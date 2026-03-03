@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 
-// ✏️ EDIT: Change nav links here
+
 const navLinks = [
   { label: 'About',    href: '#about' },
   { label: 'Skills',   href: '#skills' },

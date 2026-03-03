@@ -1,7 +1,7 @@
 import React from 'react';
 import './Skills.css';
 
-// ✏️ EDIT: Add, remove, or change skills here
+
 const skills = [
   { icon: '🟢', label: 'Node.js' },
   { icon: '⚛️', label: 'React' },

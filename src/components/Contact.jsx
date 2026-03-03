@@ -3,11 +3,7 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
 
-//  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// EmailJS credentials
-// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// Change these to include VITE_
-// Use process.env + REACT_APP_ prefix
+
 const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 const EMAILJS_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 const EMAILJS_AUTOREPLY_TEMPLATE = process.env.REACT_APP_EMAILJS_AUTOREPLY_TEMPLATE;
@@ -44,7 +40,7 @@ export default function Contact() {
     email: "",
     message: "",
   });
-  const [status, setStatus] = useState("idle"); // 'idle' | 'sending' | 'success' | 'error'
+  const [status, setStatus] = useState("idle"); 
 
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -54,8 +50,7 @@ export default function Contact() {
     e.preventDefault();
     setStatus("sending");
 
-    // Pass state directly — fixes the blank {{message}} bug
-    // that happens when using sendForm() with controlled React inputs
+    
     const templateVars = {
       name: formData.name,
       email: formData.email,
@@ -64,14 +59,14 @@ export default function Contact() {
 
     try {
       await Promise.all([
-        // 1️⃣ Notifies YOU
+        
         emailjs.send(
           EMAILJS_SERVICE_ID,
           EMAILJS_TEMPLATE_ID,
           templateVars,
           EMAILJS_PUBLIC_KEY,
         ),
-        // 2️⃣ Auto-reply to sender
+        
         emailjs.send(
           EMAILJS_SERVICE_ID,
           EMAILJS_AUTOREPLY_TEMPLATE,

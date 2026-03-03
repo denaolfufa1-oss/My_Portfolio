@@ -2,12 +2,10 @@ import React from 'react';
 import './Hero.css';
 import photo from "../assets/denaol.png";
 
-// ✏️ EDIT: Change your photo path here (put your image in /src/assets/)
-// Example: import photo from '../assets/denaol.jpg';
-// Then replace the placeholder div with: <img src={photo} alt="Denaol Fufa" />
-const PHOTO = photo; // set to imported image when ready
 
-// ✏️ EDIT: Change hero stats
+const PHOTO = photo; 
+
+
 const stats = [
   { num: '3+',    label: 'Projects' },
   { num: 'Full',  label: 'Stack Dev' },

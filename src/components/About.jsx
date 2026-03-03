@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 
-// ✏️ EDIT: Update the terminal JSON values to match your real info
+
 const devData = {
   name:      'Denaol Fufa',
   role:      'Full Stack Developer',

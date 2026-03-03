@@ -11,7 +11,7 @@ const projects = [
     title: "Evangadi Forum",
     badge: "Full Stack",
     url: "https://bejewelled-torte-5871b3.netlify.app/",
-    image: evangadiImg, // ✏️ Replace null with your imported image
+    image: evangadiImg, 
     description:
       "A community Q&A forum platform where users can ask questions, post answers, and engage in discussions. Built with authentication and real-time data.",
     tags: ["React", "Node.js", "MySQL", "Express", "JWT Auth"],
@@ -21,7 +21,7 @@ const projects = [
     title: "Amazon Clone",
     badge: "E-Commerce",
     url: "https://gregarious-malasada-9133b1.netlify.app/",
-    image: amazonImg, // ✏️ Replace null with your imported image
+    image: amazonImg, 
     description:
       "A feature-rich e-commerce clone with product listings, shopping cart, and checkout flow — replicating the core Amazon shopping experience.",
     tags: ["React", "Node.js", "Context API", "CSS"],
@@ -31,7 +31,7 @@ const projects = [
     title: "Netflix Clone",
     badge: "Frontend",
     url: "https://denaolfufa1-oss.github.io/Netflix-clone1/",
-    image: netflixImg, // ✏️ Replace null with your imported image
+    image: netflixImg, 
     description:
       "A pixel-perfect Netflix UI clone with responsive design, movie browsing, and modern streaming service aesthetics.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive"],
