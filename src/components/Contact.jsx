@@ -23,8 +23,8 @@ const contactLinks = [
   },
   {
     icon: "💼",
-    label: "linkedin.com/in/yourusername",
-    href: "https://linkedin.com/in/yourusername",
+    label: "linkedin.com/in/",
+    href: "https://linkedin.com/in/",
     external: true,
   },
   {
